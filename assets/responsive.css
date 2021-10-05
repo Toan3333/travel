@@ -1,0 +1,399 @@
+@media screen and (min-width: 1024px) {
+  .citi-admin {
+    font-size: 1.2rem;
+    margin: 0 5px;
+  }
+
+  .month {
+    font-size: 1.2rem;
+    margin: 0px 5px;
+  }
+}
+
+/* Ipad */
+
+@media screen and (max-width: 1023px) {
+  ul.nav-list li {
+    display: inline-flex;
+    margin: 0 8px;
+  }
+
+  item {
+    font-size: 1.5rem;
+  }
+
+  .banner-title {
+    font-size: 4rem;
+    line-height: 4.2rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+  }
+
+  .form-input {
+    width: calc(50% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .about-section-left {
+    width: 40%;
+    padding: 0 15px;
+  }
+
+  .about-section-right {
+    padding: 0 15px;
+  }
+
+  .about-title {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin-bottom: 20px;
+  }
+
+  .feature-content-title {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  .feature-desc {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  .btn.btn-uppercase {
+    font-size: 1rem;
+    margin-right: 0;
+  }
+
+  .service-left {
+    width: 100%;
+  }
+
+  .service-title {
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+  }
+
+  .service-text-title {
+    max-width: 512px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .service-title-desc {
+    margin-top: 8px;
+  }
+
+  .service-right {
+    width: 100%;
+  }
+
+  .team-image {
+    width: calc(50% - 30px);
+    margin-bottom: 30px;
+  }
+
+  .package-box {
+    width: calc(50% - 30px);
+  }
+
+  .blog-box {
+    width: calc(50% - 30px);
+  }
+
+  .citi-admin {
+    font-size: 1.5rem;
+    margin: 0 12px;
+  }
+
+  .footer-1 {
+    width: calc(50% - 30px);
+
+    margin-bottom: 30px;
+  }
+
+  .footer-2 {
+    width: calc(50% - 30px);
+
+    margin-bottom: 30px;
+  }
+
+  .footer-3 {
+    width: calc(50% - 30px);
+  }
+
+  .footer-4 {
+    width: calc(50% - 30px);
+  }
+
+  .trailer video {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 60.5%;
+    font-family: "Josefin Sans", sans-serif;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+  }
+
+  .heading-navigation {
+    width: 100%;
+    background-color: var(--white);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .heading-navigation.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    transition: 0.3s linear;
+  }
+
+  ul.nav-list {
+    width: 100%;
+  }
+
+  ul.nav-list li {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .item {
+    display: block;
+    width: 100%;
+    padding: 15px 17px;
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    border-top: 1px solid #dbeefd;
+  }
+
+  .btn-orange {
+    display: none;
+  }
+
+  .bookink-now {
+    display: flex;
+    align-items: center;
+  }
+
+  .bars-mobile {
+    display: block;
+  }
+
+  .bars-mobile i {
+    color: #2d394b;
+    font-size: 3.2rem;
+  }
+
+  .banner {
+    padding-top: 70px;
+  }
+
+  .banner-left {
+    width: 100%;
+  }
+
+  .banner-title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .banner-text {
+    font-family: "Roboto", sans-serif;
+    line-height: 2.4rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+
+  .banner-right {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .form-input {
+    width: calc(100% - 20px);
+  }
+
+  .about-section {
+    padding-top: 90px;
+    padding-bottom: 60px;
+  }
+
+  .about-section-left {
+    width: 100%;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .about-section-right {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .about-text {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .icon-about-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .icon-about {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .icon-about-text {
+    font-family: "Roboto", sans-serif;
+  }
+
+  .feature {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .feature-title-text {
+    font-size: 2.8rem;
+  }
+
+  .feature-box {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .feature-content-title {
+    margin-bottom: 10px;
+  }
+
+  .feature-desc {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 2.4rem;
+  }
+
+  .btn.btn-uppercase {
+    font-size: 1.3rem;
+  }
+
+  .service {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .service-title {
+    font-size: 2.6rem;
+    line-height: 3rem;
+  }
+
+  .service-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 15px;
+  }
+
+  .circle-af {
+    width: 80px;
+    margin-bottom: 18px;
+  }
+
+  .service-title-desc {
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    color: var(--text-grey);
+    line-height: 2.2rem;
+  }
+
+  .team {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .team-image {
+    width: 100%;
+  }
+
+  .testimonial {
+    display: none;
+  }
+
+  .travel-best {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .package-box {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .blog {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .blog-box {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .blog-title {
+    font-size: 2rem;
+  }
+
+  .blog-text {
+    font-size: 1.5rem;
+  }
+
+  .citi-admin {
+    font-size: 1.5rem;
+    margin: 0 8px;
+  }
+
+  .brand {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .brand-img {
+    width: 25%;
+    margin-bottom: 15px;
+  }
+
+  .footer {
+    padding-top: 50px;
+  }
+
+  .footer-1 {
+    width: 100%;
+  }
+  .footer-2 {
+    width: 100%;
+  }
+  .footer-3 {
+    width: 100%;
+  }
+  .footer-4 {
+    width: 100%;
+  }
+
+  .footer-title {
+    font-size: 2rem;
+  }
+}

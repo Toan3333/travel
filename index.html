@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+  />
+    <script>
+        $(document).ready(function(){
+            $(".search").click(function(){
+                $(".search-box").show();
+            });
+        });
+        $(document).ready(function(){
+            $(".btn-danger").click(function(){
+                $(".search-box").hide(200);
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="main full-width">
+        <!-- Header -->
+        <div class="header">
+            <div class="container">
+                <div class="header-flex">
+                    <div class="logo">
+                        <a href="#">
+                            <img class="logo-img" src="./assets/img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="heading-navigation">
+                        <ul class="nav-list">
+                            <li>
+                                <a href="#" class="item item-active" onClick="navigationList(this)">Home</a>
+                            </li>
+                            <li>
+                                <a href="./about.html" class="item" onClick="navigationList(this)">About</a>
+                            </li>
+                            <li>
+                                <a href="#" class="item" onClick="navigationList(this)">Tour</a>
+                            </li>
+                            <li>
+                                <a href="#" class="item" onClick="navigationList(this)">Pages</a>
+                            </li>
+                            <li>
+                                <a href="#" class="item" onClick="navigationList(this)">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#" class="item" onClick="navigationList(this)">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bookink-now">
+                        <div class="search">
+                            <div class="ttn-search">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <div class="search-box">
+                                <div class="search-form">
+                                    <input type="text" class="search-input" placeholder="Search">
+                                    <button class="search-btn" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                                <div class="btn-danger">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-orange">Book now</button>
+                        <div class="bars-mobile" id="menu-bar">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- banner -->
+        <div class="banner">
+            <div class="container">
+                <div class="box-container box-center">
+                    <div class="banner-left">
+                        <h3 class="banner-title">Discover Amazing Places of the World....</h3>
+                        <p class="banner-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <div class="banner-left-bottom">
+                            <a href="" class="btn">Explore Now</a>
+                            <div class="watch-now">
+                                <a href="#" class="play" onClick="hien()">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </a>
+                                <span class="text-banner-left">Watch Now</span>
+                            </div>
+                        </div>
+                        <div class="trailer">
+                            <video src="./assets/video/y2mate.com - Vietnam  Land of ancient secrets  Cinematic Travel_480p.mp4" controls="true"></video>
+                            <div class="close" onClick="hien()">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-right">
+                        <a href="#">
+                            <img class="banner-image" src="./assets/img/banner-img-1.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- customer -->
+        <div class="customer">
+            <div class="container">
+                <div class="customer-box">
+                    <div class="form-group">
+                        <input class="form-input" type="text" placeholder="Where Do ?">
+                        <input class="form-input" type="text" placeholder="Travel Type">
+                        <input class="form-input" type="date">
+                        <button class="form-input btn-bt"><i class="fa fa-search-plus" aria-hidden="true"></i>Find Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About-section -->
+        <div class="about-section">
+            <div class="container">
+                <div class="box-container">
+                    <div class="about-section-left">
+                        <a href="#">
+                            <img class="about-img" src="./assets/img/about-1.jpg" alt="">
+                        </a>
+                        <div class="play-video">
+                            <a href="#" class="play play-about">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about-section-right">
+                        <h3 class="about-title">
+                            We make the best for all our Traveler customers.
+                        </h3>
+                        <p class="about-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                        </p>
+                        <div class="icon-about-box-flex">
+                            <div class="icon-about-flex">
+                                <div class="icon-about">
+                                    <img class="icon-about-img" src="./assets/img/antivirus.png" alt="">
+                                    <span class="icon-about-text">Safety Travel System</span>
+                                </div>
+                                <div class="icon-about">
+                                    <img class="icon-about-img" src="./assets/img/money-bag.png" alt="">
+                                    <span class="icon-about-text">Safety Travel System</span>
+                                </div>
+                            </div>
+                            <div class="icon-about-flex">
+                                <div class="icon-about">
+                                    <img class="icon-about-img" src="./assets/img/lightbulb.png" alt="">
+                                    <span class="icon-about-text">Safety Travel System</span>
+                                </div>
+                                <div class="icon-about">
+                                    <img class="icon-about-img" src="./assets/img/call-center-agent.png" alt="">
+                                    <span class="icon-about-text">Safety Travel System</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="btn">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- feature -->
+        <div class="feature">
+            <div class="container">
+                <div class="feature-title-center">
+                    <span class="feature-title">Feature</span>
+                    <h3 class="feature-title-text">Unique Features</h3>
+                </div>
+                <div class="box-container flex-mr">
+                    <div class="feature-box">
+                        <div class="feature-circle">
+                            <img class="travel-img" src="./assets/img/travel-1.png" alt="">
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-content-title">Reservation</h3>
+                            <p class="feature-desc">
+                                At vero eoset accusamus etiusto odio dignissimos ducimus
+                                qui exercitation aliqua blanditiis praesentium
+                            </p>
+                        </div>
+                        <a href="" class="btn btn-uppercase">Learn More</a>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-circle">
+                            <img class="travel-img" src="./assets/img/travel-2.png" alt="">
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-content-title">Worldwide Service</h3>
+                            <p class="feature-desc">
+                                At vero eoset accusamus etiusto odio dignissimos ducimus
+                                qui exercitation aliqua blanditiis praesentium
+                            </p>
+                        </div>
+                        <a href="" class="btn btn-uppercase">Learn More</a>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-circle">
+                            <img class="travel-img" src="./assets/img/travel-3.png" alt="">
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-content-title">Payment</h3>
+                            <p class="feature-desc">
+                                At vero eoset accusamus etiusto odio dignissimos ducimus
+                                qui exercitation aliqua blanditiis praesentium
+                            </p>
+                        </div>
+                        <a href="" class="btn btn-uppercase">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- service -->
+        <div class="service">
+            <div class="container">
+                <div class="box-container">
+                    <div class="service-left">
+                        <h3 class="service-title">
+                            We Provied on demand vehicle rental solution For Our Travelers
+                        </h3>
+                        <p class="service-text-title">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                        </p>
+                        <div class="service-box">
+                            <div class="circle-af">
+                                <img class="travel-img" src="./assets/img/service-1.png" alt="">
+                            </div>
+                            <div class="service-body">
+                                <span class="service-body-title">
+                                    Airline Service
+                                </span>
+                                <p class="service-title-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service-box">
+                            <div class="circle-af">
+                                <img class="travel-img" src="./assets/img/service-2.png" alt="">
+                            </div>
+                            <div class="service-body">
+                                <span class="service-body-title">
+                                    Transport Service
+                                </span>
+                                <p class="service-title-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service-box">
+                            <div class="circle-af">
+                                <img class="travel-img" src="./assets/img/service-3.png" alt="">
+                            </div>
+                            <div class="service-body">
+                                <span class="service-body-title">
+                                    Hotel Service
+                                </span>
+                                <p class="service-title-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-right">
+                        <img class="bg-service" src="./assets/img/bg.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- banner-content -->
+        <div class="image-banner">
+            <div class="play-video xoayvong">
+                <a href="#" class="play play-about" onClick="hien()">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="trailer">
+                <video src="./assets/video/y2mate.com - Vietnam  Land of ancient secrets  Cinematic Travel_480p.mp4" controls="true"></video>
+                <div class="close" onClick="hien()">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team -->
+        <div class="team">
+            <div class="container">
+                <div class="feature-title-center">
+                    <span class="feature-title">Feature</span>
+                    <h3 class="feature-title-text">Unique Features</h3>
+                </div>
+                <div class="box-container flex-mr">
+                    <div class="team-image">
+                        <a href="" class="team-image-box">
+                            <img class="place-img" src="./assets/img/place-1.jpg" alt="">
+                        </a>
+                        <div class="team-image-content">
+                            <h3>Affrican Park</h3>
+                            <div class="content-meta">
+                                <span class="citi"><i class="fa fa-map-marker" aria-hidden="true"></i>10 Cities</span>
+                                <span class="tour-citi"><i class="fa fa-eye" aria-hidden="true"></i>20+ Tour Places</span>
+                            </div>
+                            <div class="content-meta-star">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <span class="meta-view">(150)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-image">
+                        <a href="" class="team-image-box">
+                            <img class="place-img" src="./assets/img/place-2.jpg" alt="">
+                        </a>
+                        <div class="team-image-content">
+                            <h3>Vietnam</h3>
+                            <div class="content-meta">
+                                <span class="citi"><i class="fa fa-map-marker" aria-hidden="true"></i>10 Cities</span>
+                                <span class="tour-citi"><i class="fa fa-eye" aria-hidden="true"></i>20+ Tour Places</span>
+                            </div>
+                            <div class="content-meta-star">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <span class="meta-view">(150)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-image">
+                        <a href="" class="team-image-box">
+                            <img class="place-img" src="./assets/img/place-3.jpg" alt="">
+                        </a>
+                        <div class="team-image-content">
+                            <h3>New York City</h3>
+                            <div class="content-meta">
+                                <span class="citi"><i class="fa fa-map-marker" aria-hidden="true"></i>10 Cities</span>
+                                <span class="tour-citi"><i class="fa fa-eye" aria-hidden="true"></i>20+ Tour Places</span>
+                            </div>
+                            <div class="content-meta-star">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <span class="meta-view">(150)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- testimonial -->
+        <div class="testimonial">
+            <div class="container">
+                <div class="feature-title-center">
+                    <span class="feature-title">Feature</span>
+                    <h3 class="feature-title-text">Unique Features</h3>
+                </div>
+                <div class="swiper testimonial-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide comment-box">
+                            <p class="comment-user">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s. when an unknown printer
+                                took a galley of type and scrambled it to.
+                            </p>
+                            <div class="user">
+                                <img src="./assets/img/testimonial-1.jpg" alt="">
+                                <div class="user-info">
+                                    <span class="user-name">Shwan Pull</span>
+                                    <div class="item-user">Traveller</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide comment-box">
+                            <p class="comment-user">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s. when an unknown printer
+                                took a galley of type and scrambled it to.
+                            </p>
+                            <div class="user">
+                                <img src="./assets/img/testimonial-2.jpg" alt="">
+                                <div class="user-info">
+                                    <span class="user-name">Shwan Pull</span>
+                                    <div class="item-user">Traveller</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide comment-box">
+                            <p class="comment-user">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s. when an unknown printer
+                                took a galley of type and scrambled it to.
+                            </p>
+                            <div class="user">
+                                <img src="./assets/img/testimonial-3.jpg" alt="">
+                                <div class="user-info">
+                                    <span class="user-name">Shwan Pull</span>
+                                    <div class="item-user">Traveller</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide comment-box">
+                            <p class="comment-user">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s. when an unknown printer
+                                took a galley of type and scrambled it to.
+                            </p>
+                            <div class="user">
+                                <img src="./assets/img/testimonial-2.jpg" alt="">
+                                <div class="user-info">
+                                    <span class="user-name">Shwan Pull</span>
+                                    <div class="item-user">Traveller</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide comment-box">
+                            <p class="comment-user">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s. when an unknown printer
+                                took a galley of type and scrambled it to.
+                            </p>
+                            <div class="user">
+                                <img src="./assets/img/testimonial-1.jpg" alt="">
+                                <div class="user-info">
+                                    <span class="user-name">Shwan Pull</span>
+                                    <div class="item-user">Traveller</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- best -->
+        <div class="travel-best">
+            <div class="container">
+                <div class="feature-title-center">
+                    <span class="feature-title">Best</span>
+                    <h3 class="feature-title-text">Popular Package</h3>
+                </div>
+                <div class="swiper package-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide package-box">
+                            <img class="package-img" src="./assets/img/package.jpg" alt="">
+                            <div class="package-content">
+                                <h3 class="package-title">
+                                    Brazil Sea each
+                                </h3>
+                                <p class="packkage-text-title">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dicta at aliquam...
+                                </p>
+                                <div class="icon-package">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span class="marker-package">Praia do cassinobeach, Brazil</span>
+                                </div>
+                                <div class="date-flex">
+                                    <div class="date-box-left">
+                                        <span>5 days - 4 nights</span>
+                                    </div>
+                                    <div class="date-box-social">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <span>(20)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide package-box">
+                            <img class="package-img" src="./assets/img/package-1.jpg" alt="">
+                            <div class="package-content">
+                                <h3 class="package-title">
+                                    Brazil Sea each
+                                </h3>
+                                <p class="packkage-text-title">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dicta at aliquam...
+                                </p>
+                                <div class="icon-package">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span class="marker-package">Praia do cassinobeach, Brazil</span>
+                                </div>
+                                <div class="date-flex">
+                                    <div class="date-box-left">
+                                        <span>5 days - 4 nights</span>
+                                    </div>
+                                    <div class="date-box-social">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <span>(20)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide package-box">
+                            <img class="package-img" src="./assets/img/package-2.jpg" alt="">
+                            <div class="package-content">
+                                <h3 class="package-title">
+                                    Brazil Sea each
+                                </h3>
+                                <p class="packkage-text-title">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dicta at aliquam...
+                                </p>
+                                <div class="icon-package">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span class="marker-package">Praia do cassinobeach, Brazil</span>
+                                </div>
+                                <div class="date-flex">
+                                    <div class="date-box-left">
+                                        <span>5 days - 4 nights</span>
+                                    </div>
+                                    <div class="date-box-social">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <span>(20)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide package-box">
+                            <img class="package-img" src="./assets/img/package-3.jpg" alt="">
+                            <div class="package-content">
+                                <h3 class="package-title">
+                                    Brazil Sea each
+                                </h3>
+                                <p class="packkage-text-title">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dicta at aliquam...
+                                </p>
+                                <div class="icon-package">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span class="marker-package">Praia do cassinobeach, Brazil</span>
+                                </div>
+                                <div class="date-flex">
+                                    <div class="date-box-left">
+                                        <span>5 days - 4 nights</span>
+                                    </div>
+                                    <div class="date-box-social">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <span>(20)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide package-box">
+                            <img class="package-img" src="./assets/img/package.jpg" alt="">
+                            <div class="package-content">
+                                <h3 class="package-title">
+                                    Brazil Sea each
+                                </h3>
+                                <p class="packkage-text-title">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dicta at aliquam...
+                                </p>
+                                <div class="icon-package">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span class="marker-package">Praia do cassinobeach, Brazil</span>
+                                </div>
+                                <div class="date-flex">
+                                    <div class="date-box-left">
+                                        <span>5 days - 4 nights</span>
+                                    </div>
+                                    <div class="date-box-social">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <span>(20)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next prev">
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="swiper-button-prev prev">
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog -->
+        <div class="blog">
+            <div class="container">
+                <div class="feature-title-center">
+                    <span class="feature-title">Blog</span>
+                    <h3 class="feature-title-text">Latest Blog</h3>
+                </div>
+                <div class="box-container flex-mr">
+                    <div class="blog-box">
+                        <img class="blog-img" src="./assets/img/blog-1.jpg" alt="">
+                        <div class="blog-content">
+                            <div class="tour-title">
+                                <h5>Tourist Guide</h5> 
+                            </div>
+                            <h3 class="blog-title">
+                                Recreation Programs From Watery Landscape
+                            </h3>
+                            <p class="blog-text">
+                                Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor.
+                            </p>
+                            <div class="blog-flex">
+                                <div class="citi-admin">
+                                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                                    <span>City Admin</span>
+                                </div>
+                                <div class="month">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    <span>June 6, 2021</span> 
+                                </div>
+                                <div class="message">
+                                    <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                    <span>50</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-box">
+                        <img class="blog-img" src="./assets/img/blog-2.jpg" alt="">
+                        <div class="blog-content">
+                            <div class="tour-title">
+                                <h5>Tourist Guide</h5> 
+                            </div>
+                            <h3 class="blog-title">
+                                Self Guided Driving & Tour Walk Of Greater City
+                            </h3>
+                            <p class="blog-text">
+                                Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor.
+                            </p>
+                            <div class="blog-flex">
+                                <div class="citi-admin">
+                                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                                    <span>City Admin</span>
+                                </div>
+                                <div class="month">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    <span>June 6, 2021</span> 
+                                </div>
+                                <div class="message">
+                                    <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                    <span>50</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-box">
+                        <img class="blog-img" src="./assets/img/blog-3.jpg" alt="">
+                        <div class="blog-content">
+                            <div class="tour-title">
+                                <h5>Tourist Guide</h5> 
+                            </div>
+                            <h3 class="blog-title">
+                                Recreation Programs From Watery Landscape
+                            </h3>
+                            <p class="blog-text">
+                                Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor.
+                            </p>
+                            <div class="blog-flex">
+                                <div class="citi-admin">
+                                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                                    <span>City Admin</span>
+                                </div>
+                                <div class="month">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    <span>June 6, 2021</span> 
+                                </div>
+                                <div class="message">
+                                    <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                    <span>50</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brand -->
+        <div class="brand">
+            <div class="container">
+                <div class="swiper brand-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide brand-img">
+                            <img src="./assets/img/1.png" alt="">                               
+                        </div>
+                        <div class="swiper-slide brand-img">
+                            <img src="./assets/img/2.png" alt="">                               
+                        </div>
+                        <div class="swiper-slide brand-img">
+                            <img src="./assets/img/3.png" alt="">                               
+                        </div>
+                        <div class="swiper-slide brand-img">
+                            <img src="./assets/img/4.png" alt="">                               
+                        </div>
+                        <div class="swiper-slide brand-img">
+                            <img src="./assets/img/5.png" alt="">                               
+                        </div>
+                        <div class="swiper-slide brand-img">
+                            <img src="./assets/img/2.png" alt="">                               
+                        </div>
+                        <div class="swiper-slide brand-img">
+                            <img src="./assets/img/5.png" alt="">                               
+                        </div>
+                        <div class="swiper-slide brand-img">
+                            <img src="./assets/img/3.png" alt="">                               
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="box-container">
+                    <div class="footer-1">
+                        <div class="logo-footer">
+                            <img src="./assets/img/logo.png" alt="">
+                        </div>
+                        <p class="footer-text">
+                            Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                            incididuntut consec tetur adipisicing.
+                        </p>
+                        <h4 class="footer-title">Follow us</h4>
+                        <div class="footer-social">
+                            <a href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-2">
+                        <h4 class="footer-title">Latest News</h4>
+                        <div class="footer-flex">
+                            <img src="./assets/img/lastest.jpg" alt="">
+                            <div class="footer-content">
+                                <span class="footer-content-title">Did son unreserved themselves.</span>
+                                <p class="footer-date">JUNE 10, 2021</p>
+                            </div>
+                        </div>
+                        <div class="footer-flex">
+                            <img src="./assets/img/lastest.jpg" alt="">
+                            <div class="footer-content">
+                                <span class="footer-content-title">Did son unreserved themselves.</span>
+                                <p class="footer-date">JUNE 10, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-3">
+                        <h4 class="footer-title">Latest News</h4>
+                        <ul class="footer-list">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Services</a>
+                            </li>
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-4">
+                        <h4 class="footer-title">Latest News</h4>
+                        <p class="miss">
+                            Don’t miss to subscribe to our new feeds, kindly fill the form below.
+                        </p>
+                        <div class="footer-form">
+                            <input type="text" placeholder="Email Address">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- File JS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
