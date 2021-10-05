@@ -513,7 +513,7 @@ input.search-input {
 }
 
 .image-banner {
-  background-image: url(assets/img/bg-video.jpg);
+  background-image: url(./img/bg-video.jpg);
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -960,7 +960,7 @@ img.place-img {
 
 .footer {
   padding-top: 80px;
-  background-image: url(assets/img/footer-bg.png);
+  background-image: url(./img/footer-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
