@@ -21,6 +21,20 @@ function navigationList(element) {
     element.style.color = '#ff5e14';
 }
 
+$(".search").click(function(){
+  $(".search-box").show();
+});
+
+$(".btn-danger").click(function(){
+  $(".search-box").hide(200);
+});
+
+$(window).on('load', function(event){
+  $('body').removeClass('pre-loading');
+  $('.load').delay(1000).fadeOut();
+});
+
+
 // Xử lý slider
 
 var swiper = new Swiper(".testimonial-slider", {
